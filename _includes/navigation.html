@@ -1,0 +1,17 @@
+<nav class="nav">
+  {% for item in site.data.navigation %}
+    <div class="navBar"><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></div>
+  {% endfor %}
+	<img src="/assets/logo-oversteer.svg" alt="Oversteer logo" class="oversteer" >
+</nav>
+
+<input type="checkbox" id="gaman">
+<label class="sLabel" for="gaman">&#9776;</label>
+<nav class="navSmall">	
+	<ul>
+		<li><a class="aNav" href="/">Home</a></li>
+		<li><a class="aNav" href="/about.html">About</a></li>
+		<li><a class="aNav" href="/blog.html">Blog</a></li>
+		<li><a class="aNav" href="/staff.html">Staff</a></li>
+	</ul>
+</nav>
